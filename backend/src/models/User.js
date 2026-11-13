@@ -7,7 +7,7 @@ const userSchema = new mongoose.Schema(
     name: { type: String, default: "" },
     picture: { type: String, default: "" },
     // Proof of concept: everybody is an admin. Flip the default to 'user' later.
-    role: { type: String, enum: ["admin", "user"], default: "admin" },
+    role: { type: String, enum: ["admin", "user"], default: "user" },
   },
   { timestamps: true },
 );
